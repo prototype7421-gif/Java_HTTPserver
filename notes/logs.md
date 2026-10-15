@@ -180,3 +180,82 @@ POST= sever fetches the data and give it back aS an HTTP response.
 
  > what is Routing?
 well its a rule tht controls the application behaviour between and path and HTTP request.
+
+ # Date: 15 October 2026
+Project: HyperPage Java HTTP Server
+Status: Initial setup completed; TCP server implementation in progress.
+
+1. Work Completed
+
+Set up the basic Java Maven project structure.
+
+Configured pom.xml with project metadata and Java compiler settings.
+
+Fixed an XML parsing issue in pom.xml and successfully ran mvn validate.
+
+Created the initial core.Server class and added a startup message: HyperPage Loading......
+
+Prepared a .gitignore configuration for Maven build output, compiled files, IDE settings, temporary files, and environment secrets.
+
+Discussed running and testing the Java project using Ubuntu on WSL.
+
+2. Problems Faced and Solutions
+
+Problem 1: Maven configuration
+
+Issue: XML parsing failed because of an issue around the XML declaration.
+
+Solution: Removed the blank line before the XML declaration.
+
+Result: mvn validate completed successfully.
+
+Problem 2: Java socket implementation
+
+Issue: Confusion between the custom Server class and Java's built-in ServerSocket class.
+
+Issue: Incorrect method-call syntax while attempting to bind the server to an address.
+
+Solution: Identified the correct class, the bind() method, and the need to handle IOException.
+
+Status: Binding to 127.0.0.1:8080 still needs to be verified.
+
+Problem 3: Git push failure
+
+Error: src refspec main does not match any
+
+Likely cause: The local main branch may not have a commit, or the local branch may have a different name.
+
+Next action: Check the current branch and commit history, create the initial commit if needed, and push again.
+
+Status: Not yet confirmed resolved.
+
+3. Concepts Learned
+
+Purpose of Maven and the pom.xml file.
+
+Difference between a custom server class and Java's ServerSocket.
+
+Purpose of InetSocketAddress and bind().
+
+Difference between a listening socket and a connected client socket.
+
+Basic Git staging, commits, branches, and pushing to a remote repository.
+
+How Windows project paths map to Ubuntu WSL paths.
+
+4. Next Session's Goals
+
+Verify the Java and Maven installations inside Ubuntu WSL.
+
+Compile the project and confirm the current Server.java implementation.
+
+Successfully bind the server to 127.0.0.1:8080.
+
+Keep the server running and accept the first client connection using accept().
+
+Test the TCP connection locally.
+
+Resolve the Git push issue and verify the repository state.
+
+Begin implementing HTTP request parsing and responses only after the TCP connection works.
+
