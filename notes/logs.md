@@ -259,3 +259,8 @@ Resolve the Git push issue and verify the repository state.
 
 Begin implementing HTTP request parsing and responses only after the TCP connection works.
 
+# 18 oct 2026
+today we implemented the next step of accepting the request from the client 
+> we made a accepting socket and client socket and
+also added an array to take bytes as a data and read it 
+>using inputstream and convert it into strings.
