@@ -264,3 +264,5 @@ today we implemented the next step of accepting the request from the client
 > we made a accepting socket and client socket and
 also added an array to take bytes as a data and read it 
 >using inputstream and convert it into strings.
+# 9 Nov 2026
+-> i am reading a book related to networking in java maybe the next phase of development will be according to that book.

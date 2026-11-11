@@ -3,3 +3,4 @@ pom.xml
 include
 documentation
 target
+*.class
